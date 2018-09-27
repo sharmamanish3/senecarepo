@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SenecaSwag",
+		"_postman_id": "f2021109-03d8-bec8-ea9b-79b85a9ccd73",
+		"description": "Project Seneca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CourseRetrieveWithHeader",
+			"request": {
+				"url": "http://localhost:3010/api/courses/4a742f30-c0d7-11e8-9822-499169db8ba8",
+				"method": "GET",
+				"header": [
+					{
+						"key": "'X-User-Id",
+						"value": "53c5bc10-c18c-11e8-9f2a-7f5ce665e908",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sessionId\": \"e096fdd5-c0dc-11e8-9b9e-095ed1454485\",\n    \"totalModulesStudied\": 35,\n    \"averageScore\": 55,\n    \"timeStudied\": 700\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CourseRetrieveWithHeader copy",
+			"request": {
+				"url": "http://localhost:3010/api/courses/4a742f30-c0d7-11e8-9822-499169db8ba8",
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "53c5bc10-c18c-11e8-9f2a-7f5ce665e908",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sessionId\": \"e096fdd5-c0dc-11e8-9b9e-095ed1454485\",\n    \"totalModulesStudied\": 35,\n    \"averageScore\": 55,\n    \"timeStudied\": 700\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST COURSE STATS",
+			"request": {
+				"url": "http://localhost:3010/api/courses/4a742f30-c0d7-11e8-9822-499169db8ba9",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "X-User-Id",
+						"value": "4a742f35-c0d7-11e8-9822-499169db8ba8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SessionDetailInCourse",
+			"request": {
+				"url": "http://localhost:3010/api/courses/4a742f30-c0d7-11e8-9822-499169db8ba8",
+				"method": "GET",
+				"header": [
+					{
+						"key": "'X-User-Id",
+						"value": "53c5bc10-c18c-11e8-9f2a-7f5ce665e908",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sessionId\": \"e096fdd5-c0dc-11e8-9b9e-095ed1454485\",\n    \"totalModulesStudied\": 35,\n    \"averageScore\": 55,\n    \"timeStudied\": 700\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ADMIN DATA",
+			"request": {
+				"url": "http://localhost:3011/api/courses/admin/data",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
